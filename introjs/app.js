@@ -100,19 +100,103 @@ console.log(Boolean("null"))
 const ad = 4
 const an = "4"
 
-console.log(ad == an) // is ad equal to an 
-console.log(ad === an) // is ad strictly equal to an 
-console.log(ad !== an) // is ad strictly not equal to an 
-console.log(ad >= an) // is ad greater than or equal to an 
-console.log(ad <= an) // is ad less than  or equal to an 
-console.log(ad <= an && an > ad) // && is "and" operator 
-console.log(ad <= an || an > ad) // || is "or" operator 
+// is ad equal to an
+console.log(ad == an)  
+
+// is ad strictly equal to an 
+console.log(ad === an) 
+
+// is ad strictly not equal to an 
+console.log(ad !== an) 
+
+// is ad greater than or equal to an 
+console.log(ad >= an) 
+
+// is ad less than  or equal to an 
+console.log(ad <= an) 
+
+// && is "and" operator 
+console.log(ad <= an && an > ad)
+
+// || is "or" operator 
+console.log(ad <= an || an > ad) 
 
 
-//example  of using boolean expression for practical real life things 
+//example  of using boolean expression for practical real life things
 const tenOrOlder = false;
 const cameWithAdult = true;
 
-console.log(tenOrOlder || cameWithAdult);
+// console.log(tenOrOlder || cameWithAdult);
 
+
+//Control Flow is a bundle of programming tools that allow us to break apart from the procedural nature of code (do x, then y, then z).
+
+/////////////////////////////
+
+//If Statements
+
+if(tenOrOlder || cameWithAdult){
+    console.log("good")
+}else{
+    console.log("bad")
+}
+
+console.log("this code runs either way")
+
+let cheese; //we did not assign a value to cheese
+
+if (cheese){
+    console.log("value")
+}else{
+    console.log("empty")
+}
+
+const people = "Zen"
+
+////////////////////////
+
+//Switch
+//we are taking the variable "people" and then the switch statement is checking if the case value is a part of the variable 
+switch (people){ 
+    case "Zen":
+        console.log("come on inside")
+        break
+
+    case "Jay":
+        console.log("come on inside")
+          break
+
+    case "Bob":
+        console.log("come on inside")
+    break
+
+    case "Zoom":
+        console.log("come on inside")
+        break
+
+//default case runs if the value asked isn't in the variable 
+    default:
+        console.log("not entry  ")
+}
+
+///////////////////////
+
+//Loops The ability to repeat a block of code several consecutive times.
+
+//While Loops
+
+let x = 0
+
+while(x < 10){
+    console.log(x)
+    x += 1
+}
+
+//For loop, you have to use semi-colons for this loop 
+
+//for(counter, expression, what you want to happen)
+
+for(let x = 0; x < 10; x += 1){
+    console.log(x)
+}
 
